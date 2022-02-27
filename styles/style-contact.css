@@ -279,7 +279,7 @@ textarea {
     visibility: hidden;
   }
   .hidden-code {
-    background-image: url("/assets/images/mezz_wildflowers-ver4@2x.jpg");
+    background-image: url("assets/images/mezz_wildflowers-ver4@2x.jpg");
     background-size: cover;
     background-position: 0% 80%;
     background-repeat: no-repeat;
@@ -403,7 +403,7 @@ textarea {
     visibility: hidden;
   }
   .hidden-code {
-    background-image: url("/assets/images/mezz_wildflowers-ver4@2x.jpg");
+    background-image: url("assets/images/mezz_wildflowers-ver4@2x.jpg");
     background-size: cover;
     background-position: 0% 80%;
     background-repeat: no-repeat;

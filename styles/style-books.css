@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap");
 
 .books-hero-container {
-  background-image: url("/assets/images/mezz_wildflowers-ver4@2x.jpg");
+  background-image: url("assets/images/mezz_wildflowers-ver4@2x.jpg");
   background-size: cover;
   background-position: 0% 80%;
   background-repeat: no-repeat;
@@ -103,7 +103,7 @@
     visibility: hidden;
   }
   .hidden-code {
-    background-image: url("/assets/images/mezz_wildflowers-ver4@2x.jpg");
+    background-image: url("assets/images/mezz_wildflowers-ver4@2x.jpg");
     background-size: cover;
     background-position: 0% 80%;
     background-repeat: no-repeat;
@@ -234,7 +234,7 @@
     visibility: hidden;
   }
   .hidden-code {
-    background-image: url("/assets/images/mezz_wildflowers-ver4@2x.jpg");
+    background-image: url("assets/images/mezz_wildflowers-ver4@2x.jpg");
     background-size: cover;
     background-position: 0% 80%;
     background-repeat: no-repeat;
