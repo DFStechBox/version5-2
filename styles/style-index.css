@@ -1,0 +1,1163 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* html {
+  background-color: #dcdcdc;
+} */
+body {
+  font-size: 16px;
+  min-height: 100vh;
+  margin: 0;
+  /* background-color: #dcdcdc; */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  /* background-color: #dcdcdc; */
+}
+#masthead {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 12;
+}
+
+.navbar {
+  /* background-color: rgb(168, 222, 224, 0.9); */
+  background-color: #edecde;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.menu li {
+  list-style: none;
+  margin: 3rem;
+}
+.menu li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #6c8cbf;
+  -webkit-text-decoration-skip: none; /* Safari */
+  text-decoration-skip-ink: none;
+}
+.menu .current,
+.navlist-mq .current {
+  /* background: #264d59; */
+  text-decoration: underline;
+  -webkit-text-decoration-skip: none;
+  text-decoration-skip-ink: none;
+}
+.footer-menu-items .current {
+  /* background-color: #264d59; */
+  text-decoration: underline;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  color: #cfb53b;
+  white-space: nowrap;
+}
+
+.menu-left {
+  justify-content: flex-end;
+}
+.logo .logo-img {
+  width: 6em;
+  margin: 0 1rem;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+.navlist-mq {
+  display: none;
+}
+.mobile-nav .nav-list {
+  color: #cfb53b;
+}
+.hidden-code {
+  visibility: hidden;
+  display: none;
+}
+
+.hero-container {
+  background-image: url("/assets/images/mezz_wildflowers-w255-1.jpg");
+  background-size: cover;
+  background-position: 0% 80%;
+  background-repeat: no-repeat;
+  max-width: 1200px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 2.8fr 1.2fr;
+  margin-top: 6rem;
+  max-height: 25rem;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content h1 {
+  font-family: "Tangerine", cursive;
+  font-size: 7em;
+  font-weight: 300;
+  text-shadow: 0.012rem 0.012rem purple;
+  color: green;
+}
+.hero-content h3 {
+  font-size: 3em;
+  color: #183a1d;
+  font-weight: 200;
+  text-shadow: 0.012rem 0.012rem purple;
+  letter-spacing: 0.1rem;
+}
+
+/*PORTRAIT*/
+.portrait {
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portrait > * {
+  width: 100%;
+  height: auto;
+}
+/******START SOCIAL********/
+.social-med {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-height: 6.5rem;
+  height: 4rem;
+  margin-top: -4rem;
+  background: rgba(249, 226, 174, 0.7);
+}
+
+.fa {
+  padding: 0.3rem;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+}
+.fa-facebook,
+.fa-twitter {
+  color: #578f53;
+  margin-right: 5rem;
+}
+.fa-instagram {
+  color: #578f53;
+}
+
+.fa:hover {
+  opacity: 0.9;
+}
+/****** END SOCIAL*******/
+
+/*CTA*/
+.main-area {
+  max-width: 1200px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.recent,
+.itsotf > p,
+.tfytf > p,
+.newsletter > p,
+.serendipity > p,
+.acd > p,
+.rwlyf > p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #555;
+}
+
+.card {
+  flex: 0 1 calc(33.3% - 1rem); /*child of cards*/
+  /* background: #e6e6fa; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+  /* background-color: #f4f0ec; */
+  background-color: #f9f8f6;
+}
+
+.recent {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #b71772;
+}
+
+.card-content {
+  padding: 1.4em;
+}
+.card .bookCover img {
+  margin-top: 0.5rem;
+  width: 12rem;
+  height: auto;
+}
+
+.itsotf h2 {
+  color: #663156;
+}
+.serendipity h2 {
+  color: #d65667;
+}
+.acd h2 {
+  color: red;
+}
+.rwlyf h2 {
+  color: red;
+}
+.tfytf h2 {
+  color: green;
+}
+.itsotf h3 {
+  color: #811655;
+}
+.serendipity h3,
+.tfytf h3,
+.acd h3,
+.rwlyf h3 {
+  color: black;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  /*Font scaling below*/
+  -ms-transform: scaleY(1.3); /* IE 9 */
+  -webkit-transform: scaleY(1.3); /* Safari */
+  transform: scaleY(1.3);
+  text-align: center;
+}
+
+.card-content h3 {
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.buy-button {
+  transition-property: none;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 14rem;
+  height: 3rem;
+  margin: 0 auto 1rem;
+  padding: 0;
+  background-color: white;
+  color: #333;
+  border: 2.9px solid #3a2234;
+  font-size: 1.5em;
+}
+.buy-button:hover {
+  font-size: 1.7em;
+  height: 3rem;
+  border: 3px solid green;
+}
+.buy-button a {
+  text-decoration: none;
+}
+.ebook-buy-button {
+  margin-bottom: 1rem;
+}
+/*START NEWSLETTER SIGNUP FORM*/
+.newsletter-card {
+  /*   background: #b0c4de; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 3rem;
+  background-color: burlywood;
+}
+.newsletter-title {
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 0;
+}
+.newsletter-title p {
+  margin-top: 1rem;
+}
+.sign-up-now {
+  margin-top: 0;
+}
+.newsletter-form {
+  max-width: 25rem;
+  margin: 2rem auto 0;
+  padding: 0.3125rem;
+  height: auto;
+  font: bold 14px sans-serif;
+  text-align: center;
+}
+.newsletter-form .form-row .span {
+  margin-left: 4rem;
+  padding-bottom: 0;
+}
+.newsletter-form .form-row {
+  text-align: center;
+  /* width: 18rem; */
+  margin: 1.57rem auto 0;
+}
+
+.newsletter-form .form-row > label span {
+  display: block;
+  text-align: left;
+  font-size: 1.4em;
+  color: #5f5f5f;
+  padding: 0 0 0.75rem;
+}
+.newsletter-form .form-row > label input {
+  background: white;
+  width: 15rem;
+  height: 2rem;
+}
+.newsletter-form .subscribe button {
+  font-size: 2em;
+  margin-top: 2rem;
+}
+.future-card {
+  flex: 0 1 calc(33.3% - 1rem); /*child of cards*/
+  background: #e6e6fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+
+  visibility: visible;
+}
+/*END NEWSLETTER SIGNUP FORM*/
+
+/**** START FOOTER****/
+.footer-container {
+  margin-top: 1rem;
+}
+.footer {
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #faf8f4;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-menu-items {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0 3rem;
+}
+.footer-menu-items a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #cfb53b;
+}
+.socials-me {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer-social-facebook,
+.footer-social-twitter {
+  margin-right: 2rem;
+}
+.footer-socials li {
+  list-style: none;
+}
+.footer-socials li a {
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.copyright p {
+  font-size: 1.1em;
+}
+
+/**** End Footer****/
+
+/* Extra small devices (phones, 480px and down) */
+@media (max-width: 299.98px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navlist-mq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  hr {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    margin-top: auto;
+  }
+  .navlist-mq {
+    list-style-type: none;
+    align-items: center;
+  }
+  .navitems-mq {
+    display: inline-block;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5rem;
+    color: #cfb53b;
+    white-space: nowrap;
+    border-bottom: 0.063rem solid rgba(207, 180, 59, 0.3);
+    padding: 0.5rem 0.625rem;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+  }
+  .navitems-mq a {
+    text-decoration: none;
+  }
+  .navlist-mq {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  /* .navbar {
+    height: 12vh;
+  } */
+  .logo img {
+    margin-top: auto;
+    width: 3.5em;
+  }
+  /*Hero Section*/
+  .hero-container {
+    display: none;
+    visibility: hidden;
+  }
+  .hidden-code {
+    background-image: url("/assets/images/mezz_wildflowers.jpg");
+    background-size: cover;
+    background-position: 0% 80%;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: visible;
+    height: 17rem;
+    margin-top: 4rem;
+  }
+  .portrait > * {
+    margin-top: 1em;
+    width: 9rem;
+    height: auto;
+  }
+
+  .hero-content h1 {
+    font-family: "Tangerine", cursive;
+    font-size: 2em;
+    font-weight: 300;
+    color: #183a1d;
+  }
+  .hero-content h3 {
+    font-size: 0.75em;
+    color: green;
+    font-weight: 100;
+  }
+
+  .social-med {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-height: 6.5rem;
+    height: 3rem;
+    background: rgba(225, 238, 221, 0.6);
+    padding-right: 0;
+    margin-top: -3rem;
+  }
+  .fa-twitter,
+  .fa-facebook {
+    margin-right: 2rem;
+  }
+
+  .social-med .facebook,
+  .social-med .twitter,
+  .social-med .instagram {
+    font-size: 1em;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+  .card {
+    flex: 0 1 calc(100% - 0.5rem); /*child of cards*/
+  }
+  .buy-button {
+    width: 10rem;
+    height: 1.5rem;
+    font-size: 0.9em;
+  }
+  .buy-button:hover {
+    font-size: 1em;
+    height: 1.4rem;
+    border: 3px solid green;
+  }
+  .future-card {
+    display: none;
+    visibility: hidden;
+  }
+  .hero-container {
+    height: 18rem;
+  }
+  .newsletter h2 {
+    font-size: 1.1em;
+  }
+  .footer {
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer-menu-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 0.4rem;
+  }
+  .menu-items-me {
+    margin-top: 0.5rem;
+  }
+  .footer-menu-items a {
+    font-size: 0.7em;
+  }
+  .footer-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0 1rem;
+  }
+  .footer-socials li a {
+    margin: 0;
+  }
+  .socials-me {
+    margin-top: 0.4rem;
+  }
+  .copyright-me {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .copyright p {
+    font-size: 0.8em;
+    margin-bottom: 0.5rem;
+  }
+  .break-point {
+    margin-top: 0.2rem;
+    content: ‘\a’;
+    display: block;
+  }
+  #me:target {
+    background-color: lightblue;
+  }
+}
+@media (min-width: 300px) and (max-width: 479.98px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navlist-mq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  hr {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    margin-top: auto;
+  }
+  .navlist-mq {
+    list-style-type: none;
+    align-items: center;
+  }
+  .navitems-mq {
+    display: inline-block;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5rem;
+    color: #cfb53b;
+    white-space: nowrap;
+    border-bottom: 0.063rem solid rgba(207, 180, 59, 0.3);
+    padding: 0.5rem 0.625rem;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+  }
+  .navitems-mq a {
+    text-decoration: none;
+  }
+  .navlist-mq {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+
+  .logo .logo-img {
+    margin: auto auto;
+    width: 4em;
+  }
+  /*Hero Section*/
+  .hero-container {
+    display: none;
+    visibility: hidden;
+  }
+  .hidden-code {
+    background-image: url("/assets/images/mezz_wildflowers.jpg");
+    background-size: cover;
+    background-position: 0% 80%;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: visible;
+    height: 17rem;
+    margin-top: 3.5rem;
+  }
+  .portrait > * {
+    margin-top: 1em;
+    width: 9rem;
+    height: auto;
+  }
+
+  .hero-content h1 {
+    font-family: "Tangerine", cursive;
+    font-size: 2em;
+    font-weight: 300;
+    color: #183a1d;
+  }
+  .hero-content h3 {
+    font-size: 1em;
+    color: green;
+    font-weight: 100;
+  }
+
+  .social-med {
+    width: 100%;
+    height: 3rem;
+    margin-top: 3rem;
+    padding-right: 0;
+  }
+
+  .social-med .facebook,
+  .social-med .twitter,
+  .social-med .instagram {
+    font-size: 1.5em;
+  }
+  .social-med {
+    margin-top: -9vh;
+  }
+  .hero-container {
+    height: 18rem;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+  .card {
+    flex: 0 1 calc(100% - 0.5rem); /*child of cards*/
+  }
+  .buy-button {
+    width: 10rem;
+    height: 1.5rem;
+    font-size: 0.9em;
+  }
+  .buy-button:hover {
+    font-size: 1em;
+    height: 1.4rem;
+    border: 3px solid green;
+  }
+  .future-card {
+    display: none;
+    visibility: hidden;
+  }
+
+  .newsletter h2 {
+    font-size: 1.1em;
+  }
+  .footer {
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer-menu-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 1.3rem;
+  }
+  .menu-items-me {
+    margin-top: 0.5rem;
+  }
+  .footer-menu-items a {
+    font-size: 0.7em;
+  }
+  .footer-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0 1rem;
+  }
+  .footer-socials li a {
+    margin: 0;
+  }
+  .socials-me {
+    margin-top: 0.4rem;
+  }
+  .copyright-me {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .copyright p {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599.98px) {
+  .navbar {
+    height: 4rem;
+  }
+  .menu li {
+    margin: 0 0.7rem;
+  }
+  .menu li a {
+    font-size: 1.5em;
+  }
+  .logo .logo-img {
+    margin: 0 0.5rem;
+    width: 3em;
+  }
+  .hero-container {
+    height: 12rem;
+    margin-top: 4rem;
+  }
+  .hero-content h1 {
+    font-size: 3em;
+    margin-top: -1rem;
+  }
+  .hero-content h3 {
+    font-size: 1em;
+  }
+  .portrait > * {
+    margin-top: -1rem;
+    margin-right: 2rem;
+    width: 100%;
+    height: auto;
+  }
+  .social-med {
+    padding-left: 2rem;
+    height: 3rem;
+    margin-top: -3rem;
+  }
+  .social-med .facebook,
+  .social-med .twitter,
+  .social-med .instagram {
+    font-size: 1.5em;
+  }
+  .cards {
+    justify-content: center;
+  }
+  .card {
+    flex: 0 1 calc(100% - 5rem); /*child of cards*/
+  }
+  .buy-button {
+    width: 10rem;
+    height: 2rem;
+    font-size: 1em;
+  }
+  .buy-button:hover {
+    font-size: 1.1em;
+    height: 2.1rem;
+    border: 3px solid green;
+  }
+  .future-card {
+    display: none;
+    visibility: hidden;
+  }
+  .footer {
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .menu-items-me {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0;
+    font-size: 1em;
+  }
+  .socials-me {
+    margin-bottom: 1rem;
+  }
+  .copyright-me {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767.98px) {
+  .menu li {
+    margin: 0 1.1rem;
+  }
+  .menu li a {
+    font-size: 1.6em;
+  }
+  .logo .logo-img {
+    width: 4em;
+  }
+  .portrait > * {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 12em;
+  }
+  .hero-container {
+    height: 18rem;
+  }
+  .hero-content h1 {
+    font-size: 3.8em;
+  }
+  .hero-content h3 {
+    font-size: 1em;
+  }
+  .card {
+    flex: 0 1 calc(50% - 1rem); /*child of cards*/
+  }
+  .buy-button {
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 1.2em;
+  }
+  .buy-button:hover {
+    font-size: 1.3em;
+    height: 2.6rem;
+    border: 3px solid green;
+  }
+  .future-card {
+    display: none;
+    visibility: hidden;
+  }
+
+  .footer {
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .menu-items-me {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0;
+    font-size: 1.3em;
+  }
+  .socials-me {
+    margin-bottom: 1rem;
+  }
+  .copyright-me {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 481px - 600px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .menu li {
+    margin: 0 1.6rem;
+  }
+  .menu li a {
+    font-size: 2em;
+  }
+
+  .logo .logo-img {
+    width: 5em;
+  }
+  .hero-container {
+    height: 19rem;
+    align-items: center;
+  }
+  .portrait > * {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 13em;
+  }
+  .hero-content h1 {
+    font-size: 5em;
+  }
+  .hero-content h3 {
+    font-size: 1.5em;
+  }
+  .social-med .facebook,
+  .social-med .twitter,
+  .social-med .instagram {
+    font-size: 2em;
+  }
+  .card {
+    flex: 0 1 calc(33.3% - 1rem); /*child of cards*/
+  }
+  .card .recent {
+    font-size: 1em;
+  }
+  .newsletter-form {
+    min-width: 15rem;
+    margin: 2rem auto 0;
+    padding: 0.3125rem;
+    height: auto;
+  }
+  .newsletter-form .form-row > label input {
+    max-width: 13rem;
+    height: 2rem;
+  }
+  .newsletter-title h2 {
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+  }
+  .buy-button {
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 1.2em;
+  }
+  .buy-button:hover {
+    font-size: 1.3em;
+    height: 2.6rem;
+  }
+  .future-card {
+    visibility: visible;
+    flex: 0 1 calc(33.3% - 1rem); /*child of cards*/
+    background: #e6e6fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+  }
+
+  .footer {
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .menu-items-me {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0;
+    font-size: 1.3em;
+  }
+  .socials-me {
+    margin-bottom: 1rem;
+  }
+  .copyright-me {
+    margin-bottom: 2rem;
+  }
+}
+/* Medium devices (landscape tablets, 601px - 768px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .menu li {
+    margin: 0 3rem;
+  }
+  .menu li a {
+    font-size: 2.5em;
+  }
+  .logo .logo-img {
+    width: 6em;
+  }
+  .hero-container {
+    height: 20rem;
+    align-items: center;
+  }
+  .portrait > * {
+    margin-top: 2em;
+    margin-right: 2em;
+  }
+  .hero-content h3 {
+    font-size: 2em;
+  }
+  .hero-content h1 {
+    font-size: 6em;
+  }
+  .social-med {
+    height: 4rem;
+    margin-top: -4rem;
+  }
+  .social-med .facebook,
+  .social-med .twitter,
+  .social-med .instagram {
+    font-size: 2em;
+  }
+  .buy-button {
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 1.2em;
+  }
+  .buy-button:hover {
+    font-size: 1.3em;
+    height: 2.6rem;
+  }
+  .newsletter-form .form-row > label input {
+    max-width: 15rem;
+    height: 2rem;
+  }
+  .future-card {
+    visibility: visible;
+    flex: 0 1 calc(33.3% - 1rem); /*child of cards*/
+    background: #e6e6fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  .footer-container {
+    margin-bottom: 1rem;
+  }
+  .footer {
+    min-height: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .footer-menu-items li a {
+    font-weight: 100;
+    font-size: 1em;
+  }
+  .footer-socials li a {
+    font-size: 1.5em;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 1200px) {
+  /* .menu li {
+    margin: 0 2em;
+  } */
+  .portrait > * {
+    width: 19em;
+    height: auto;
+    margin-top: 2em;
+    margin-right: 2em;
+  }
+  .hero-content h1 h2 {
+    margin-left: -8rem;
+  }
+  .hero-content h1 {
+    font-size: 7em;
+  }
+
+  .hero-container {
+    height: 25rem;
+  }
+  .social-med .facebook,
+  .social-med .twitter,
+  .social-med .instagram {
+    font-size: 2em;
+  }
+  .future-card {
+    visibility: visible;
+    flex: 0 1 calc(33.3% - 1rem); /*child of cards*/
+    background: #e6e6fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media (min-width: 1201px) {
+  .portrait > * {
+    width: 70%;
+    height: auto;
+  } */

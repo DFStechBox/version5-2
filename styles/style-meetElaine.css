@@ -1,0 +1,194 @@
+.about-elaine {
+  background-color: #fcf8de;
+  padding: 2rem 1rem 2rem 2rem;
+}
+.about-e {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.about-elaine p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.3em;
+  font-weight: 100;
+}
+.elaine {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 299.98px) {
+}
+@media (min-width: 300px) and (max-width: 479.98px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navlist-mq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  hr {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    margin-top: auto;
+  }
+  .navlist-mq {
+    list-style-type: none;
+    align-items: center;
+  }
+  .navitems-mq {
+    display: inline-block;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5rem;
+    color: #cfb53b;
+    white-space: nowrap;
+    border-bottom: 0.063rem solid rgba(207, 180, 59, 0.3);
+    padding: 0.5rem 0.625rem;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+  }
+  .navitems-mq a {
+    text-decoration: none;
+  }
+  .navlist-mq {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+
+  .logo .logo-img {
+    margin: auto auto;
+    width: 4em;
+  }
+  /*Hero Section*/
+  .hero-container {
+    display: none;
+    visibility: hidden;
+  }
+  .hidden-code {
+    background-image: url("/assets/images/mezz_wildflowers-ver4@2x.jpg");
+    background-size: cover;
+    background-position: 0% 80%;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: visible;
+    height: 17rem;
+    margin-top: 3.5rem;
+  }
+  .portrait > * {
+    margin-top: 1em;
+    width: 9rem;
+    height: auto;
+  }
+
+  .hero-content h1 {
+    font-family: "Tangerine", cursive;
+    font-size: 2em;
+    font-weight: 300;
+    color: #183a1d;
+  }
+  .hero-content h3 {
+    font-size: 1em;
+    color: green;
+    font-weight: 100;
+  }
+
+  .social-med {
+    width: 100%;
+    height: 3rem;
+    margin-top: 3rem;
+    padding-right: 0;
+  }
+
+  .social-med .facebook,
+  .social-med .twitter,
+  .social-med .instagram {
+    font-size: 1.5em;
+  }
+  .social-med {
+    margin-top: -9vh;
+  }
+  .hero-container {
+    height: 18rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599.98px) {
+  .navbar {
+    height: 4rem;
+  }
+  .menu li {
+    margin: 0 0.7rem;
+  }
+  .menu li a {
+    font-size: 1.5em;
+  }
+  .logo .logo-img {
+    margin: 0 0.5rem;
+    width: 3em;
+  }
+  .hero-container {
+    height: 12rem;
+    margin-top: 4rem;
+  }
+  .hero-content h1 {
+    font-size: 3em;
+    margin-top: -1rem;
+  }
+  .hero-content h3 {
+    font-size: 1em;
+  }
+  .portrait > * {
+    margin-top: -1rem;
+    margin-right: 2rem;
+    width: 100%;
+    height: auto;
+  }
+  .social-med {
+    padding-left: 2rem;
+    height: 3rem;
+    margin-top: -3rem;
+  }
+  .social-med .facebook,
+  .social-med .twitter,
+  .social-med .instagram {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767.98px) {
+}
+
+/* Small devices (portrait tablets and large phones, 481px - 600px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* Medium devices (landscape tablets, 601px - 768px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 1200px) {
+}

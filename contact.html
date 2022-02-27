@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <script src="https://kit.fontawesome.com/b9a88e23ab.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="/styles/style-reset.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/style-index.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/style-contact.css" rel="stylesheet" type="text/css" />
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link
+      rel="stylesheet"
+      href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"
+    />
+  </head>
+  <body>
+    <main-container class="main">
+      <!----------- START MAIN NAV ------------------>
+      <section-header>
+        <div id="masthead">
+          <div class="navbar sticky">
+            <span class="hamburger-icon" id="navHamburger">
+              <a></a><i class="fas fa-bars"></i>
+            </span>
+            <ul class="menu menu-left">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li>
+                <a href="meetElaine.html" class="nav-link">Meet Elaine</a>
+              </li>
+            </ul>
+            <div class="logo">
+              <img
+                src="/assets/images/logo5-5.png"
+                class="logo-img"
+                alt="Logo"
+              />
+            </div>
+            <ul class="menu menu-right">
+              <li><a href="books.html" class="nav-link">Books</a></li>
+              <li>
+                <a href="contact.html" class="nav-link current">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- START MOBILE NAV -->
+        <div class="mobile-nav">
+          <ul class="navlist-mq" id="navlist">
+            <li class="navitems-mq">
+              <a class="nav-list" href="index.html">Home</a>
+            </li>
+            <li class="navitems-mq">
+              <a class="nav-list" href="meetElaine.html">Meet Elaine</a>
+            </li>
+            <li class="navitems-mq">
+              <a class="nav-list" href="books.html">Books</a>
+            </li>
+            <li class="navitems-mq">
+              <a class="nav-list current" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- END MOBILE NAV -->
+      </section-header>
+      <!-------------- END MAIN NAV --------------------->
+
+      <!-- START HERO SECTION -->
+      <section-hero class="hero-container">
+        <div class="hero-content">
+          <h1>Elaine Denald Stewart</h1>
+          <h3>Epiphany & Rhymes Books Author</h3>
+        </div>
+        <!-- <div class="portrait">
+          <img src="images/portrait-ver4@2x.png" alt="Author's Portrait" />
+        </div> -->
+      </section-hero>
+
+      <section-hero class="hidden-code">
+        <div class="portrait">
+          <img
+            src="/assets/images/portrait-ver4@2x.png"
+            alt="Author's Portrait"
+          />
+        </div>
+        <div class="hero-content">
+          <h1>Elaine Denald Stewart</h1>
+          <h3>Epiphany & Rhymes Book Author</h3>
+        </div>
+      </section-hero>
+      <!-- END HERO SECTION-->
+
+      <!-- START SOCIAL -->
+      <section-social class="social">
+        <div class="social-med">
+          <!-- Add font awesome icons -->
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </section-social>
+      <!-- END SOCIAL -->
+
+      <!--START CONTACT FORM-->
+      <div class="wrapper">
+        <div class="portraitWrapperContact">
+          <div class="portraitContact">
+            <!-- Hide on small screens -->
+            <img
+              src="/assets/images/portrait-ver4@2x.png"
+              alt="Author's Portrait"
+            />
+          </div>
+          <div class="inquiries">
+            <p>
+              For all inquiries, please contact the publisher<br /><br />
+              Elaine Denald Stewart<br /><br />
+              elainedenaldstewart@outlook.com
+            </p>
+          </div>
+        </div>
+        <div class="inner">
+          <form action="" method="post">
+            <h3>Contact</h3>
+            <p>Please leave me a message below and I’ll be in touch.</p>
+            <label class="form-group">
+              <input type="text" class="form-control" required />
+              <span>Your Name</span>
+              <span class="border"></span>
+            </label>
+            <label class="form-group">
+              <input type="email" class="form-control" required />
+              <span>Your Email Address</span>
+              <span class="border"></span>
+            </label>
+            <label class="form-group">
+              <textarea name="" id="" class="form-control" required></textarea>
+              <span for="">Your Message</span>
+              <span class="border"></span>
+            </label>
+            <button class="contact-submit-btn">
+              Submit
+              <i class="zmdi zmdi-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!--END CONTACT FORM-->
+
+      <footer-section class="footer-container">
+        <div class="footer">
+          <div class="menu-items-me">
+            <ul class="footer-menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="meetElaine.html">About Elaine</a></li>
+              <li><a href="books.html">Books</a></li>
+              <li><a class="current" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="socials-me">
+            <ul class="footer-socials">
+              <li>
+                <a href="#" class="fa fa-facebook footer-social-facebook"></a>
+              </li>
+              <li>
+                <a href="#" class="fa fa-twitter footer-social-twitter"></a>
+              </li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+            </ul>
+          </div>
+          <div class="copyright copyright-me">
+            <p>
+              &copy;
+              <script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script>
+              Elaine Denald Stewart &nbsp;<span class="break-point"
+                >&nbsp; Designed by DFSTech, Inc.</span
+              >
+            </p>
+          </div>
+        </div>
+      </footer-section>
+    </main-container>
+
+    <script type="text/javascript" src="/scripts/script.js" defer></script>
+  </body>
+</html>
