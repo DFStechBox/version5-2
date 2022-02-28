@@ -238,6 +238,19 @@ body {
   width: 12rem;
   height: auto;
 }
+.switchCoverButton {
+  transition-property: none;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  margin: 0 auto 1rem;
+  padding: 0;
+  background-color: white;
+  color: #333;
+}
+.switchCoverButton :hover {
+  cursor: pointer;
+}
 
 .itsotf h2 {
   color: #663156;
