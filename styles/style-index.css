@@ -111,7 +111,7 @@ body {
 }
 
 .hero-container {
-  background-image: url("../assets/images/mezz_wildflowers-w255-1.jpg");
+  background-image: url("/assets/images/mezz_wildflowers-w255-1.jpg");
   background-size: cover;
   background-position: 0% 80%;
   background-repeat: no-repeat;
