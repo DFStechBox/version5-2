@@ -41,7 +41,11 @@ body {
 
 .navbar {
   /* background-color: rgb(168, 222, 224, 0.9); */
-  background-color: #edecde;
+  /* background-color: #edecde; */
+  background: linear-gradient(
+    rgba(104, 178, 160, 0.9),
+    rgba(145, 152, 229, 0.9)
+  );
   width: 100%;
   display: flex;
   justify-content: center;
@@ -111,7 +115,6 @@ body {
 }
 
 .hero-container {
-  background-image: url("https://dfstechbox.github.io/version5-2/assets/images/wildflowers.jpg");
   background-size: cover;
   background-position: 0% 80%;
   background-repeat: no-repeat;
@@ -121,6 +124,18 @@ body {
   grid-auto-columns: 2.8fr 1.2fr;
   margin-top: 6rem;
   max-height: 25rem;
+
+  transition-timing-function: ease-in;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+  transform-origin: center center;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  /* -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s; */
+}
+.hero-container {
+  background-image: url("https://dfstechbox.github.io/version5-2/assets/images/wildflowers.jpg");
 }
 .hero-content {
   display: flex;
@@ -141,6 +156,25 @@ body {
   font-weight: 200;
   text-shadow: 0.012rem 0.012rem purple;
   letter-spacing: 0.1rem;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+  45% {
+    opacity: 0.5;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+  70% {
+    opacity: 0.75;
+    transform: scale3d(1, 1, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 /*PORTRAIT*/
@@ -251,7 +285,7 @@ body {
 }
 .switchCoverButton :hover {
   cursor: pointer;
-  color: #6bb2a0;
+  color: #fc9687;
 }
 
 .itsotf h2 {
