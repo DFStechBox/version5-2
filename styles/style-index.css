@@ -125,17 +125,29 @@ body {
   margin-top: 6rem;
   max-height: 25rem;
 
-  transition-timing-function: ease-in;
-  -webkit-animation-name: fade-in;
   animation-name: fade-in;
+  -webkit-animation-name: fade-in;
+  transition-timing-function: ease;
   transform-origin: center center;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  transition-delay: -0.2s;
   /* -webkit-animation-delay: -0.2s;
   animation-delay: -0.2s; */
 }
 .hero-container {
   background-image: url("https://dfstechbox.github.io/version5-2/assets/images/wildflowers.jpg");
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.3;
+    transform: scale3d(0.25, 0.25, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
 }
 .hero-content {
   display: flex;
@@ -156,25 +168,6 @@ body {
   font-weight: 200;
   text-shadow: 0.012rem 0.012rem purple;
   letter-spacing: 0.1rem;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: scale3d(0.75, 0.75, 1);
-  }
-  45% {
-    opacity: 0.5;
-    transform: scale3d(0.75, 0.75, 1);
-  }
-  70% {
-    opacity: 0.75;
-    transform: scale3d(1, 1, 1);
-  }
-  100% {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-  }
 }
 
 /*PORTRAIT*/
