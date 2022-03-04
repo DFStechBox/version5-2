@@ -247,8 +247,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding-top: 1rem;
-  /* background-color: #f4f0ec; */
-  background-color: #f9f8f6;
+  background: linear-gradient(rgba(242, 245, 208), rgba(247, 195, 170));
 }
 
 .recent {
