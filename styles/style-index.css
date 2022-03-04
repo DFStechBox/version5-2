@@ -247,7 +247,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding-top: 1rem;
-  background: linear-gradient(rgba(242, 245, 208), rgba(247, 195, 170));
+  background: linear-gradient(rgb(242, 245, 208), rgb(245, 213, 184));
 }
 
 .recent {
@@ -265,11 +265,11 @@ body {
   height: auto;
 }
 .switchCoverButton {
-  border-radius: 0.25em;
-  transition-delay: 0s;
-  margin: 0 auto 1rem;
+  border-radius: 1em;
+  margin: 0.5rem auto 1rem;
   padding: 0.2rem;
-  background-color: #f1d0b4;
+  background-color: #fbc78d;
+  box-shadow: 2px 2px 9px 1px rgb(255, 255, 255);
   color: #333;
   width: 8rem;
   text-align: center;
@@ -277,7 +277,8 @@ body {
 }
 .switchCoverButton :hover {
   cursor: pointer;
-  color: #fc9687;
+  color: #fff;
+  background-color: #c6a477;
 }
 
 .itsotf h2 {
