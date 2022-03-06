@@ -279,6 +279,7 @@ body {
   cursor: pointer;
   color: #fff;
   background-color: #c6a477;
+  border-style: inset;
 }
 
 .itsotf h2 {
