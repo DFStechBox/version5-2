@@ -5,9 +5,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap");
 
 * {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -23,13 +23,15 @@ body {
 }
 
 .main {
+  background-color: #dcdcdc;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  max-width: 1200px;
-  margin: 0 auto;
   height: auto;
-  /* background-color: #dcdcdc; */
+  margin: 0 auto;
+  max-width: 1200px;
+
+  /*  */
 }
 #masthead {
   position: fixed;
@@ -279,7 +281,6 @@ body {
   cursor: pointer;
   color: #fff;
   background-color: #c6a477;
-  border-style: inset;
 }
 
 .itsotf h2 {
