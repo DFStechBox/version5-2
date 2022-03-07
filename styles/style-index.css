@@ -43,11 +43,8 @@ body {
 
 .navbar {
   /* background-color: rgb(168, 222, 224, 0.9); */
-  background-color: #fbf8f1;
-  /* background: linear-gradient(
-    rgba(104, 178, 160, 0.9),
-    rgba(145, 152, 229, 0.9)
-  ); */
+  /* background-color: #fbf8f1; */
+  background: linear-gradient(rgb(251, 248, 241), rgb(238, 229, 211));
   width: 100%;
   display: flex;
   justify-content: center;
