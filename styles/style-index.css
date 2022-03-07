@@ -23,7 +23,7 @@ body {
 }
 
 .main {
-  background-color: #edecde;
+  background-color: #f7ecde;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -43,7 +43,7 @@ body {
 
 .navbar {
   /* background-color: rgb(168, 222, 224, 0.9); */
-  background-color: #edecde;
+  background-color: #fbf8f1;
   /* background: linear-gradient(
     rgba(104, 178, 160, 0.9),
     rgba(145, 152, 229, 0.9)
@@ -249,7 +249,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding-top: 1rem;
-  background: linear-gradient(rgb(242, 245, 208), rgb(245, 213, 184));
+  background: linear-gradient(rgb(233, 218, 193), rgb(165, 203, 189));
 }
 
 .recent {
