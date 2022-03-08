@@ -93,9 +93,14 @@ body {
 .menu-left {
   justify-content: flex-end;
 }
-.logo .logo-img {
+.logo {
   width: 6em;
   margin: 0 1rem;
+}
+.logo-img {
+  max-width: 100% !important;
+  width: 10em !important;
+  height: auto !important;
 }
 
 .hamburger-icon {
