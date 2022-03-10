@@ -16,7 +16,7 @@
   background-color: #dcdcdc;
 } */
 body {
-  font-size: 16px;
+  /* font-size: 16px; */
   min-height: 100vh;
   margin: 0;
   /* background-color: #dcdcdc; */
@@ -94,7 +94,7 @@ body {
   justify-content: flex-end;
 }
 .logo {
-  width: 6em;
+  width: 6rem;
   margin: 0 1rem;
 }
 .logo-img {
@@ -263,12 +263,46 @@ body {
 .card-content {
   padding: 1.4em;
 }
+.card-content p {
+  color: #40514e;
+}
 .card .bookCover img {
   margin-top: 0.5rem;
   width: 12rem;
   height: auto;
 }
 .switchCoverButton {
+  background: #cebb8c;
+  background-image: -webkit-linear-gradient(top, #cebb8c, #e1d8c0);
+  background-image: -moz-linear-gradient(top, #cebb8c, #e1d8c0);
+  background-image: -ms-linear-gradient(top, #cebb8c, #e1d8c0);
+  background-image: -o-linear-gradient(top, #cebb8c, #e1d8c0);
+  background-image: linear-gradient(to bottom, #cebb8c, #e1d8c0);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #40514e;
+  font-size: 12px;
+  margin: 0.5rem auto 1rem;
+  text-shadow-color: #bd2dbd;
+  text-shadow-x: none;
+  text-shadow-y: none;
+  text-shadow-blur: 0;
+  padding: 7px 12px 7px 12px;
+  text-decoration: none;
+}
+
+.switchCoverButton:hover {
+  background: #c0e0b3;
+  background-image: -webkit-linear-gradient(top, #c0e0b3, #9bdea7);
+  background-image: -moz-linear-gradient(top, #c0e0b3, #9bdea7);
+  background-image: -ms-linear-gradient(top, #c0e0b3, #9bdea7);
+  background-image: -o-linear-gradient(top, #c0e0b3, #9bdea7);
+  background-image: linear-gradient(to bottom, #c0e0b3, #9bdea7);
+  text-decoration: none;
+}
+/* .switchCoverButton {
   border-radius: 1em;
   margin: 0.5rem auto 1rem;
   padding: 0.2rem;
@@ -278,12 +312,12 @@ body {
   width: 8rem;
   text-align: center;
   font-size: 1em;
-}
-.switchCoverButton :hover {
+} */
+/* .switchCoverButton :hover {
   cursor: pointer;
   color: #fff;
   background-color: #c6a477;
-}
+} */
 
 .itsotf h2 {
   color: #663156;
@@ -443,9 +477,9 @@ body {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  background-color: #faf8f4;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #f0f5ee;
+  /* background-size: cover;
+  background-repeat: no-repeat; */
 }
 .footer-menu-items {
   display: flex;
@@ -483,6 +517,7 @@ body {
 }
 .copyright p {
   font-size: 1.1em;
+  color: #40514e;
 }
 
 /**** End Footer****/
