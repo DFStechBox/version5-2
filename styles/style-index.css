@@ -285,39 +285,17 @@ body {
   color: #40514e;
   font-size: 12px;
   margin: 0.5rem auto 1rem;
-  text-shadow-color: #bd2dbd;
-  text-shadow-x: none;
-  text-shadow-y: none;
-  text-shadow-blur: 0;
+  text-shadow: #bd2dbd 0 0 0;
   padding: 7px 12px 7px 12px;
   text-decoration: none;
 }
 
 .switchCoverButton:hover {
-  background: #c0e0b3;
-  background-image: -webkit-linear-gradient(top, #c0e0b3, #9bdea7);
-  background-image: -moz-linear-gradient(top, #c0e0b3, #9bdea7);
-  background-image: -ms-linear-gradient(top, #c0e0b3, #9bdea7);
-  background-image: -o-linear-gradient(top, #c0e0b3, #9bdea7);
-  background-image: linear-gradient(to bottom, #c0e0b3, #9bdea7);
-  text-decoration: none;
-}
-/* .switchCoverButton {
-  border-radius: 1em;
-  margin: 0.5rem auto 1rem;
-  padding: 0.2rem;
-  background-color: #fbc78d;
-  box-shadow: 2px 2px 9px 1px rgb(255, 255, 255);
-  color: #333;
-  width: 8rem;
-  text-align: center;
-  font-size: 1em;
-} */
-/* .switchCoverButton :hover {
+  background: #3f8e00;
   cursor: pointer;
-  color: #fff;
-  background-color: #c6a477;
-} */
+  text-decoration: none;
+  color: #eaf6f6;
+}
 
 .itsotf h2 {
   color: #663156;
